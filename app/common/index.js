@@ -1,14 +1,12 @@
 import angular from 'angular';
-import Nav from './nav';
-import Header from './header';
-import Footer from './footer';
+import { NavModule } from './nav';
+import { HeaderModule } from './header';
+import { FooterModule } from './footer';
 
-const common = angular
+export const CommonModule = angular
   .module('app.common', [
-    Nav,
-    Header,
-    Footer
+    NavModule,
+    HeaderModule,
+    FooterModule
   ])
   .name;
-
-export default common;

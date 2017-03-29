@@ -1,5 +1,6 @@
 import CalendarNewComponent from './calendar-new.component';
 
-const calendar = angular
+export const CalendarNewModule = angular
   .module('calendar.new', [])
-  .component('calendarn', CalendarNewComponent)
+  .component('calendarnew', CalendarNewComponent)
+  .name;

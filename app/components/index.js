@@ -1,12 +1,10 @@
 import angular from 'angular';
-import Calendar from './calendar';
-import Todo from './todo';
+import { CalendarModule }  from './calendar';
+import TodoModule from './todo';
 
-const components = angular
+export const ComponentsModule = angular
   .module('app.components', [
-    Calendar,
-    Todo
+    CalendarModule,
+    TodoModule
   ])
   .name;
-
-export default components;

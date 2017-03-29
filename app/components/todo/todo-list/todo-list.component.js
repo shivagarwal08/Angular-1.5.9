@@ -1,4 +1,4 @@
-const TodoListComponent = {
+export const TodoListComponent = {
   bindings: {
     todos: '<',
   },
@@ -6,5 +6,3 @@ const TodoListComponent = {
     <pre>{{$ctrl.todos|json}}</pre>
   `
 };
-
-export default TodoListComponent;

@@ -1,24 +1,24 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import CalendarComponent from './calendar.component';
-import CalendarNew from './calendar-new';
+import { CalendarComponent } from './calendar.component';
+import { CalendarNewModule } from './calendar-new';
 
-const calendar = angular
+export const CalendarModule = angular
   .module('calendar', [
-    uiRouter, 'calendar.new'
+    uiRouter,
+    CalendarNewModule
   ])
   .component('calendar', CalendarComponent)
   .config(($stateProvider, $urlRouterProvider) => {
+    'ngInject';
     $stateProvider
       .state('calendar', {
         url: '/calendar',
         component: 'calendar'
       })
       .state('calendar.new', {
-        component: 'calendarn'
-      });      
+        component: 'calendarnew'
+      });  
     $urlRouterProvider.otherwise('/');
   })
   .name;
-
-export default calendar;

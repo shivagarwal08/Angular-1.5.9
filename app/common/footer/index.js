@@ -1,8 +1,6 @@
 import FooterComponent from './footer.component';
 
-const footer = angular
+export const FooterModule = angular
   .module('footer', [])
   .component('footer', FooterComponent)
   .name;
-
-export default footer;

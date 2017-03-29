@@ -1,11 +1,11 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import TodoComponent from './todo.component';
-import TodoService from './todo.service';
-import TodoForm from './todo-form';
-import TodoList  from './todo-list';
+import { TodoComponent } from './todo.component';
+import { TodoService } from './todo.service';
+import { TodoForm } from './todo-form';
+import { TodoList } from './todo-list';
 
-const todo = angular
+export const TodoModule = angular
   .module('todo', [
     uiRouter,
     TodoForm,
@@ -25,5 +25,3 @@ const todo = angular
     $urlRouterProvider.otherwise('/');
   })
   .name;
-
-export default todo;

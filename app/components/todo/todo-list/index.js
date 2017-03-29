@@ -2,9 +2,8 @@
 import angular from 'angular';
 import TodoListComponent from './todo-list.component';
 
-const todoList = angular
+export const TodoListModule = angular
   .module('todo.list', [])
   .component('todoList', TodoListComponent)
   .name;
-
-export default todoList;
+  

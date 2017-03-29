@@ -1,8 +1,7 @@
 import NavComponent from './nav.component';
 
-const nav = angular
+export const NavModule = angular
   .module('nav', [])
   .component('nav', NavComponent)
   .name;
 
-export default nav;

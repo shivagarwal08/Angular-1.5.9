@@ -1,2 +1,2 @@
-import App from './app';
-angular.bootstrap(document, [App]);
+import AppModule from './app.module';
+angular.bootstrap(document, [AppModule]);
